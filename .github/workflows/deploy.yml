@@ -11,7 +11,7 @@ jobs:
     
     steps:
     
-    - name: Build app1
+    - name: Build app
       uses: PavelZubkov/mam_build@v3
       with:
         token: ${{ secrets.GH_PAT }}
