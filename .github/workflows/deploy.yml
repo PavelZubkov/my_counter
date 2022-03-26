@@ -16,9 +16,9 @@ jobs:
       with:
         token: ${{ secrets.GH_PAT }}
         package: 'my/counter'
-		namespaces:
-			- https://github.com/PavelZubkov/mam_my
-			- https://github.com/hyoo-ru/mam_lib
+        namespaces:
+          - https://github.com/PavelZubkov/mam_my
+          - https://github.com/hyoo-ru/mam_lib
     
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/main'
