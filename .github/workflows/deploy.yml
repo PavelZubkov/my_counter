@@ -12,7 +12,7 @@ jobs:
     steps:
     
     - name: Build app
-      uses: hyoo-ru/mam_build@master2
+      uses: PavelZubkov/mam_build@v3
       with:
         token: ${{ secrets.GH_PAT }}
         package: 'my/counter'
