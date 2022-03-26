@@ -18,7 +18,7 @@ jobs:
         package: 'my/counter'
         meta: |
           my/foo https://www.github.com/A/my_foo
-          my/bar https://www.github.com/A/my_bar
+          my/bar https://www.github.com/A/my_ba
     
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/main'
