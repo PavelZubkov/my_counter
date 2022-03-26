@@ -16,9 +16,10 @@ jobs:
       with:
         token: ${{ secrets.GH_PAT }}
         package: 'my/counter'
-        meta:
-        - my: https://github.com/PavelZubkov/mam_my
-        - lib: https://github.com/hyoo-ru/mam_lib
+        meta: |
+          '12345'
+          '67890'
+          'qwert'
     
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/main'
