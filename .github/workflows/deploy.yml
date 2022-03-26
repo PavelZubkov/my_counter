@@ -17,9 +17,8 @@ jobs:
         token: ${{ secrets.GH_PAT }}
         package: 'my/counter'
         meta: |
-          '12345'
-          '67890'
-          'qwert'
+          my/foo https://www.github.com/A/my_foo
+          my/bar https://www.github.com/A/my_bar
     
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/main'
