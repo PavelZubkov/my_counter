@@ -16,6 +16,8 @@ jobs:
       with:
         token: ${{ secrets.GH_PAT }}
         package: 'my/counter'
+        meta: |
+          my https://github.com/PavelZubkov/mam_my
     
     - name: Deploy on GitHub Pages
       if: github.ref == 'refs/heads/main'
